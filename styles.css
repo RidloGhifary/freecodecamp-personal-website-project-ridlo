@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+body{
+    background-color: #eeeeee;
+}
+.navbar-brand{
+    font-family: 'Dancing Script', cursive;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+}
+.bold{
+    font-weight: 700;
+}
+.bayangan{
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.7);
+    font-family: 'Inter', sans-serif;
+    font-weight: lighter;
+}
+.home{
+    background: rgb(18,18,18);
+    background: linear-gradient(126deg, rgba(18,18,18,1) 0%, rgba(92,114,145,1) 100%);
+    /* background-image: url('https://unsplash.com/photos/idDvA4jPBO8'); */
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+}
+.gambar-1{
+    background-image: url('https://images.squarespace-cdn.com/content/v1/5c1920c8fcf7fd5f404f186b/1623135414490-IM5WU4SQ0FED6CDE8C5D/thom-holmes-RqASow2Y6Os-unsplash.jpg?format=1500w');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.gambar-1:hover .ctn{
+    text-shadow: 3px 3px rgb(203, 26, 26);
+    cursor: pointer;
+}
+.ctn{
+    text-decoration: none;
+}
+.gambar-2{
+    background-image: url('https://carbontracker.org/wp-content/uploads/2021/03/scott-graham-5fNmWej4tAA-unsplash-324x216.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.gambar-2:hover .ctn{
+    text-shadow: 3px 3px rgb(0, 68, 255);
+    cursor: pointer;
+}
+.gambar-3{
+    background-image: url('https://images.unsplash.com/photo-1512428559087-560fa5ceab42?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.gambar-3:hover .ctn{
+    text-shadow: 3px 3px rgb(230, 12, 212);
+    cursor: pointer;
+}
+.gambar-4{
+    background-image: url('image/portofolio.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.gambar-4:hover .ctn{
+    text-shadow: 3px 3px rgb(41, 193, 58);
+    cursor: pointer;
+}
+.garis{
+    border-top:4px solid #ff0000;
+}
+.hover{
+    color: white;
+    text-decoration: none;
+}
+.hover:hover{
+    transform: translateY(5px);
+    transition: linear 0.3s;
+    color: #4590fd;
+}
+.link::before{
+    content: '< ';
+    color: #e4ae0b;
+    opacity: 10;
+}
+.link::after{
+    content: ' />';
+    color: #e4ae0b;
+}
+.link:hover{
+    color: #e4ae0b;
+}
+
+#about{
+    max-width: 759px;
+}
+.figure-caption:hover .text-ctn{
+    color: #e4ae0b!important;
+}
+.btn-show:hover{
+    box-shadow: 5px 5px #ff0000;
+    width: 13%;
+}
+
+@media screen and (min-width: 760px){
+    .gambar{
+        width: 200px !important;
+        height: 100px !important;
+    }
+    #about img{
+        width: 100%;
+        /* max-width: 80%; */
+    }
+    .bayangan{
+        font-size: large!important;
+    }
+    .text-ctn{
+        font-size: 20px!important;
+    }
+    .form{
+        max-width: 80%;
+        width: 100%;
+    }
+    #projects{
+        width: 100%;
+        max-width: 80%;
+    }
+    #contact a{
+        font-size: 30px!important;
+    }
+    .bayangan{
+        font-size: 23px!important;
+    }
+    .heading{
+        margin-left: 70px!important;
+    }
+    .heading-h1{
+        font-size: 35px!important;
+    }
+}
+@media screen and (min-width: 992px){
+    .gambar{
+        width: 300px !important;
+        height: 150px !important;
+    }
+    .bayangan{
+        font-size: 27px!important;
+    }
+    .heading-h1{
+        font-size: 40px!important;
+    }
+    .heading{
+        margin-left: 150px!important;
+    }
+    #projects{
+        width: 100%;
+        max-width: 80%;
+    }
+}
